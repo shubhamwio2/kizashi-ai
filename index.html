@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elastic Hands Simulation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div id="app">
+      <!-- Background Webcam Video -->
+      <video id="webcam" autoplay playsinline muted></video>
+      
+      <!-- Interactive Transparent Canvas on Top -->
+      <canvas id="output_canvas"></canvas>
+      
+      <div id="ui">
+        <h1>Elastic Hands</h1>
+        <p id="status">Loading Model & Webcam...</p>
+      </div>
+    </div>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
